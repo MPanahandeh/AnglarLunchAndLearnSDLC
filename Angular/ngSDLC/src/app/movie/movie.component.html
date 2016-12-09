@@ -8,8 +8,10 @@
       </div>
       <br>
       <div class="movie__rate">Rating:
-        <span class="movie__rating">{{movie.ImdbRating}}</span>
+        <span class="movie__rating">{{+movie.imdbRating/2}}</span>
+        <ai-star [rating]='movie.imdbRating'></ai-star>
       </div>
+
     </div>
 
     <div class="col-sm-6 col-md-8">
@@ -24,6 +26,7 @@
       <p class="movie__option"><strong>Age restriction: </strong><a href="#">{{movie.Rated}}</a></p>
       <p class="movie__option"><strong>Im ID: </strong><a href="#">{{movie.ImdbID}}</a></p>
 
+      
     </div>
   </div>
 
@@ -31,6 +34,6 @@
 
   <h2 class="page-heading">The plot</h2>
 
-  <p class="movie__describe">{{getMovie().Plot}} </p>
+  <p class="movie__describe">{{movie.Plot}} </p>
 
 </div>

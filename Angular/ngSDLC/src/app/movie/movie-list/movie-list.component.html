@@ -1,0 +1,6 @@
+<b > List of movies</b>
+<div *ngFor="let movie of getMovies()">
+  <button id="removeMovieButton" (click)="onRemove(movie)" class="btn btn-danger btn-circle btn-raised" data-placement="left"><i class="fa fa-times"></i></button>
+  <app-movie [movie]="movie"></app-movie>
+  <hr>
+</div>

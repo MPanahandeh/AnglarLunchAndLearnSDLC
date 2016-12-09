@@ -1,0 +1,16 @@
+<div class="col-lg-12">
+  <div class="bs-component">
+    <fieldset>
+      <legend>By Title</legend>
+    </fieldset>
+    <div>
+      <label class="control-label" for="t">Title:</label>
+      <input [(ngModel)]="title" type="text" id="t" name="t" class="input-small"> &nbsp;&nbsp;
+      <label class="control-label" for="y">Year:</label>
+      <input [(ngModel)]="year" type="text" id="y" name="y" class="input-small" style="width: 100px;"> &nbsp;&nbsp;
+
+      <button id="search-by-title-button" type="button" (click)="getSingle()" class="btn-sm btn-primary">Search</button>
+    </div>   
+
+  </div>
+</div>
